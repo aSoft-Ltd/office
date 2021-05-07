@@ -29,9 +29,6 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-      - name: Publishing rich-text-editor-core
-        run: ./gradlew :rich-text-editor-core:publish
-        working-directory: .
       - name: Publishing
         run: ./gradlew publish
         working-directory: .
