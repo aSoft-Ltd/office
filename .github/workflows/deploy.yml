@@ -32,9 +32,9 @@ jobs:
       - name: Publishing rich-text-editor-core
         run: ./gradlew :rich-text-editor-core:publish
         working-directory: .
-      - name: Publishing rich-text-editor-react
-        run: ./gradlew :rich-text-editor-react:publish
+      - name: Publishing
+        run: ./gradlew publish
         working-directory: .
       - name: Closing and Releasing Repositories
-        run: ./gradlew :rich-text-editor-core:closeAndReleaseRepository
+        run: ./gradlew :office-word-core:closeAndReleaseRepository
         working-directory: .
