@@ -29,7 +29,13 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-      - name: Publishing
+      - name: Gradle Version
+        run: ./gradlew --version
+        working-directory: .
+      - name: Publishing to Maven Local
+        run: ./gradlew publishToMavenLocal
+        working-directory: .
+      - name: Publishing to sonatype
         run: ./gradlew publish
         working-directory: .
       - name: Closing and Releasing Repositories
