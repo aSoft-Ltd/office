@@ -24,6 +24,6 @@ kotlin {
 }
 
 aSoftOSSLibrary(
-    version = vers.asoft.rich_text_editor,
+    version = vers.asoft.office,
     description = "A kotlin multiplatform library for rich text editing"
 )

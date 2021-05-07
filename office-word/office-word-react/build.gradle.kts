@@ -19,6 +19,6 @@ kotlin {
 }
 
 aSoftOSSLibrary(
-    version = vers.asoft.rich_text_editor,
+    version = vers.asoft.office,
     description = "A kotlin/js library for rich text editing on the browser with react"
 )
